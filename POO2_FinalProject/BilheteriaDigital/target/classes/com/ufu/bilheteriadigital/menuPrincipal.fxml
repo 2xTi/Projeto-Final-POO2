@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufu.bilheteriadigital.MenuPrincipalController">
+   <children>
+      <Pane layoutX="-3.0" prefHeight="100.0" prefWidth="606.0" style="-fx-background-color: red;">
+         <children>
+            <Label layoutX="172.0" layoutY="31.0" text="BILHETERIA DIGITAL" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="236.0" layoutY="125.0" text="Menu Principal">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="152.0" text="Escolha alguma das seguintes opções para prosseguir:" />
+      <Button layoutX="15.0" layoutY="195.0" mnemonicParsing="false" onAction="#btnCadastrarFilme" prefHeight="30.0" prefWidth="250.0" text="CADASTRAR FILME" />
+      <Button fx:id="btnComprarIngressos" layoutX="336.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnComprarIngressos" prefHeight="30.0" prefWidth="250.0" text="COMPRAR INGRESSOS" />
+      <Button layoutX="336.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnMostrarMeusIngressos" prefHeight="30.0" prefWidth="250.0" text="MEUS INGRESSOS" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="15.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnAlterarFilme" prefHeight="30.0" prefWidth="250.0" text="ALTERAR FILME" />
+      <Button layoutX="15.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnAlterarSenha" prefHeight="30.0" prefWidth="250.0" text="ALTERAR SENHA" />
+      <Button contentDisplay="BOTTOM" layoutX="175.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: red;" text="SAIR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="336.0" layoutY="195.0" mnemonicParsing="false" onAction="#btnCatalogoFilmes" prefHeight="30.0" prefWidth="250.0" text="CATÁLOGO DE FILMES" />
+      <Button layoutX="516.0" layoutY="140.0" mnemonicParsing="false" onAction="#btnPerfil" style="-fx-border-color: green; -fx-border-width: 2px;" text="Meu Perfil" />
+   </children>
+</Pane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufu.bilheteriadigital.ComprarIngressosController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: red;">
+         <children>
+            <Label layoutX="169.0" layoutY="31.0" text="BILHETERIA DIGITAL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="212.0" layoutY="121.0" text="Comprar Ingressos:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="148.0" text="Selecione o ingresso na lista abaixo e clique em comprar:" />
+      <ScrollPane layoutX="20.0" layoutY="171.0" prefHeight="200.0" prefWidth="560.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="545.0">
+               <children>
+                  <ListView fx:id="listsViewFilmes" prefHeight="200.0" prefWidth="546.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="21.0" layoutY="405.0" mnemonicParsing="false" onAction="#botaoComprarIngresso" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: GREEN; -fx-background-radius: 25px;" text="COMPRAR" textFill="WHITE" />
+      <Button layoutX="330.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnBack" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 25px;" text="VOLTAR" />
+   </children>
+</Pane>

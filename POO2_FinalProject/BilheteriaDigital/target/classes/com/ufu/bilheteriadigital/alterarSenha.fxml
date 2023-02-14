@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="wrapperContetAlterarSenha" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufu.bilheteriadigital.AlterarSenhaController">
+   <children>
+      <Label id="labelAlteracao" alignment="CENTER" layoutX="195.0" layoutY="112.0" prefHeight="18.0" prefWidth="238.0" text="Alteração de senha" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="175.0" layoutY="142.0" text="Para alterar sua senha preencha os seguintes dados:" />
+      <Label id="labelSenha" layoutX="145.0" layoutY="231.0" text="Nova senha: " />
+      <Label id="labelNovaSenha" layoutX="147.0" layoutY="268.0" text="Confirmar nova senha: " />
+      <Button id="buttonAlterarSenha" layoutX="257.0" layoutY="312.0" mnemonicParsing="false" onAction="#btnAlteraSenha" style="-fx-background-color: green; -fx-padding: 10px 20px; -fx-background-radius: 25px;" text="Alterar Senha" textFill="WHITE" />
+      <Button id="buttonVoltar" layoutX="288.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnBack" style="-fx-border-color: black; -fx-border-radius: 25px; -fx-background-color: white;" text="Voltar" />
+      <Label id="labelCinema" alignment="CENTER" layoutX="-3.0" prefHeight="100.0" prefWidth="608.0" style="-fx-background-color: red;" text="BILHETERIA DIGITAL" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputNewPassword" layoutX="281.0" layoutY="227.0" />
+      <TextField fx:id="inputConfirmNewPassword" layoutX="281.0" layoutY="264.0" />
+      <Label id="labelSenha" layoutX="147.0" layoutY="192.0" text="CPF:" />
+      <TextField fx:id="inputCpf" layoutX="281.0" layoutY="188.0" />
+   </children>
+</Pane>

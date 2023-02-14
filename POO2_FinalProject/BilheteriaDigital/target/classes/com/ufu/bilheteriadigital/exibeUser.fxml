@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ufu.bilheteriadigital.ExibeUserController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="125.0" layoutY="-23.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="115.0" layoutY="132.0" text="CPF:" />
+      <Label layoutX="117.0" layoutY="174.0" text="Nome Completo:" />
+      <TextField fx:id="inputCPF" editable="false" layoutX="249.0" layoutY="128.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="inputNome" editable="false" layoutX="249.0" layoutY="170.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button fx:id="botaoCadastrar" layoutX="233.0" layoutY="438.0" mnemonicParsing="false" onAction="#botaoDeletar" prefHeight="27.0" prefWidth="135.0" style="-fx-padding: 3px 10px; -fx-border-color: red; -fx-border-radius: 25px; -fx-background-color: white;" text="DELETAR" textFill="RED" />
+      <Button layoutX="233.0" layoutY="374.0" mnemonicParsing="false" onAction="#botaoVoltar" prefHeight="27.0" prefWidth="135.0" style="-fx-background-color: GREEN; -fx-border-color: GREEN; -fx-background-color: green; -fx-border-radius: 25px; -fx-background-radius: 25px;" text="VOLTAR" textFill="WHITE" />
+   </children>
+</Pane>
